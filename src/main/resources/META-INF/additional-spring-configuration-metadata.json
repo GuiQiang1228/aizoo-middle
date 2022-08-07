@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "flask.port",
+      "type": "java.lang.String",
+      "description": "Description for flask.port."
+  }
+] }

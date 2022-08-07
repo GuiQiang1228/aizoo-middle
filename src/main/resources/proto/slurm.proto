@@ -1,0 +1,121 @@
+syntax = "proto3";
+package proto;
+option java_package = "aizoo.grpc";
+option java_outer_classname = "SlurmServiceProto";
+option java_multiple_files = true;
+
+service slurm {
+  rpc say_hello(hello_request) returns (hello_reply) {}
+  rpc say_hello_again(hello_request) returns (hello_reply) {}
+
+  rpc experiment_job_start (slurm_start_request) returns (slurm_start_reply) {}
+  rpc slurm_stop (slurm_request) returns (slurm_stop_reply){}
+  rpc slurm_get_node_list (slurm_request) returns (slurm_get_node_list_reply){}
+  rpc slurm_show_job (slurm_request) returns (slurm_show_job_reply){}
+  rpc get_usage_rate (slurm_request) returns (slurm_show_job_reply) {}
+  rpc get_summary (slurm_request) returns (slurm_show_job_reply) {}
+  rpc get_gpu_list(slurm_request) returns (get_gpu_list_reply) {}
+  rpc get_gpu_status(get_gpu_status_request) returns (get_gpu_status_reply) {}
+  rpc get_homepage_info(get_homepage_info_request) returns (get_homepage_info_reply) {}
+  rpc service_start(service_request) returns (service_reply) {}
+  rpc get_job_ip_port(get_job_ip_port_request) returns (get_job_ip_port_reply) {}
+  rpc application_start(application_request) returns (get_application_start_reply) {}
+  rpc get_node_list(get_node_list_request) returns (get_node_list_reply) {}
+  rpc mirror_job_start(slurm_mirror_start_request) returns (slurm_start_reply) {}
+  rpc get_job_loss_and_metric(get_job_loss_and_metric_request) returns (get_job_loss_and_metric_reply) {}
+}
+
+message hello_request {
+  string name = 1;
+}
+
+message hello_reply {
+  string message = 1;
+}
+message service_request {
+  string args = 1;
+  string slurm_account = 2;
+}
+message service_reply {
+  string job_key = 1;
+}
+message get_job_ip_port_request{
+  string job_id = 1;
+}
+message get_job_ip_port_reply{
+  string ip = 1;
+  string port = 2;
+}
+message slurm_start_request {
+  string args = 1;
+  string slurm_account = 2;
+}
+message slurm_mirror_start_request {
+  string args = 1;
+  string slurm_account = 2;
+  string user_args = 3;
+}
+message slurm_request {
+  string job_key = 1;
+}
+
+message slurm_start_reply {
+  string job_key = 1;
+}
+message slurm_stop_reply{
+  string stop = 1;
+}
+message slurm_get_node_list_reply{
+  string node_dict = 1;
+}
+message slurm_show_job_reply{
+  string job = 1;
+}
+
+message get_gpu_list_request{
+  repeated string gpu_list = 1;
+}
+
+message get_gpu_list_reply{
+  repeated string gpu_list = 1;
+}
+
+message get_gpu_status_request{
+  int32 number = 1;
+  string gpu_list = 2;
+}
+
+message get_gpu_status_reply{
+  string total_usage = 1;
+}
+
+message get_homepage_info_request{
+}
+
+message get_homepage_info_reply{
+  string resource_info = 1;
+}
+
+message application_request{
+  string args = 1;
+  string slurm_account = 2;
+}
+
+message get_application_start_reply{
+  string job_key = 1;
+}
+
+message get_node_list_request{
+}
+
+message get_node_list_reply{
+  string node_list = 1;
+}
+
+message get_job_loss_and_metric_request {
+  string args = 1;
+}
+
+message get_job_loss_and_metric_reply {
+  string job_loss_and_metric = 1;
+}

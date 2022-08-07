@@ -1,0 +1,14 @@
+.idea
+.DS_Store
+node_modules/
+.project
+.vscode
+npm-debug.log
+__pycache__
+*.log
+*.iml
+target/
+java_logs/
+package-log.json
+/download/
+/src/main/resources/static/

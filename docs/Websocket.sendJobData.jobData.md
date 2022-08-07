@@ -1,0 +1,331 @@
+## job正在跑
+
+```
+{
+	"showData": {
+		"id": 19182,
+		"createTime": "2022-05-10 12:20:51",
+		"updateTime": "2022-05-10 12:22:48",
+		"environment": {
+			"account": "test",
+			"accrue_time": "2022-05-10T12:20:52",
+			"admin_comment": null,
+			"alloc_node": "mu01",
+			"alloc_sid": 140284,
+			"array_job_id": null,
+			"array_task_id": null,
+			"array_task_str": null,
+			"array_max_tasks": null,
+			"assoc_id": 29,
+			"batch_flag": 1,
+			"batch_features": null,
+			"batch_host": "gpu01",
+			"billable_tres": 2.0,
+			"bitflags": 445644800,
+			"boards_per_node": 0,
+			"burst_buffer": null,
+			"burst_buffer_state": null,
+			"command": "/data/aizoo-slurm/project/aizoo-release/aizoo-back-slurm/server/test_script_dir/T11-2e5e28ffafc47fcb14ed10bc453d21859d51a747-2022-05-10.sh",
+			"comment": null,
+			"contiguous": false,
+			"core_spec": null,
+			"cores_per_socket": null,
+			"cpus_per_task": 1,
+			"cpus_per_tres": null,
+			"cpu_freq_gov": null,
+			"cpu_freq_max": null,
+			"cpu_freq_min": null,
+			"dependency": null,
+			"derived_ec": "0:0",
+			"eligible_time": 1652156452,
+			"end_time": 1683692453,
+			"exc_nodes": [],
+			"exit_code": "0:0",
+			"features": [],
+			"group_id": 1001,
+			"job_id": 290,
+			"job_state": "RUNNING",
+			"last_sched_eval": "2022-05-10T12:20:53",
+			"licenses": {},
+			"max_cpus": 0,
+			"max_nodes": 0,
+			"mem_per_tres": null,
+			"name": "T11-2e5e28ffafc47fcb14ed10bc453d21859d51a747-2022-05-10",
+			"network": null,
+			"nodes": "gpu01",
+			"nice": 0,
+			"ntasks_per_core": null,
+			"ntasks_per_core_str": "UNLIMITED",
+			"ntasks_per_node": 0,
+			"ntasks_per_socket": null,
+			"ntasks_per_socket_str": "UNLIMITED",
+			"ntasks_per_board": 0,
+			"num_cpus": 2,
+			"num_nodes": 1,
+			"num_tasks": 1,
+			"partition": "debug",
+			"mem_per_cpu": false,
+			"min_memory_cpu": null,
+			"mem_per_node": true,
+			"min_memory_node": 2048,
+			"pn_min_memory": 2048,
+			"pn_min_cpus": 1,
+			"pn_min_tmp_disk": 0,
+			"power_flags": 0,
+			"priority": 4294901471,
+			"profile": 0,
+			"qos": "normal",
+			"reboot": 0,
+			"req_nodes": [],
+			"req_switch": 0,
+			"requeue": true,
+			"resize_time": 0,
+			"restart_cnt": 0,
+			"resv_name": null,
+			"run_time": 114,
+			"run_time_str": "00:01:54",
+			"sched_nodes": null,
+			"shared": "OK",
+			"show_flags": 18,
+			"sockets_per_board": 0,
+			"sockets_per_node": null,
+			"start_time": 1652156453,
+			"state_reason": "None",
+			"std_err": "/data/aizoo-slurm/project/aizoo-release/aizoo-back-interpreter/files/out/1e4ff627-2630-415e-91e8-718f33e589a8/runtime_log/T11-2e5e28ffafc47fcb14ed10bc453d21859d51a747-2022-05-10.%J.err",
+			"std_in": "/dev/null",
+			"std_out": "/data/aizoo-slurm/project/aizoo-release/aizoo-back-interpreter/files/out/1e4ff627-2630-415e-91e8-718f33e589a8/runtime_log/T11-2e5e28ffafc47fcb14ed10bc453d21859d51a747-2022-05-10.%J.out",
+			"submit_time": 1652156452,
+			"suspend_time": 0,
+			"system_comment": null,
+			"time_limit": "UNLIMITED",
+			"time_limit_str": "UNLIMITED",
+			"time_min": 0,
+			"threads_per_core": null,
+			"tres_alloc_str": "cpu=2,node=1,billing=2",
+			"tres_bind": null,
+			"tres_freq": null,
+			"tres_per_job": null,
+			"tres_per_node": "gpu:1",
+			"tres_per_socket": null,
+			"tres_per_task": null,
+			"tres_req_str": "cpu=1,mem=2G,node=1,billing=1",
+			"user_id": 1001,
+			"wait4switch": 0,
+			"wckey": null,
+			"work_dir": "/data/aizoo-slurm",
+			"cpus_allocated": {
+				"gpu01": 2
+			},
+			"cpus_alloc_layout": {
+				"gpu01": [2]
+			},
+			"type": "showJob"
+		},
+		"jobStatus": "RUNNING",
+		"jobKey": "290-10.102.33.49",
+		"name": "T11",
+		"checkPoints": [],
+		"downloadStatus": null,
+		"description": ""
+	},
+	"stopData": {
+	},
+	"runData": [{
+		"x": {
+			"data": "2022-05-10 12:22:50"
+		},
+		"y": [{
+			"data": "0",
+			"name": "PID-6566"
+		},
+		……多pid会有多个元素
+		],
+		"title": "gpu"
+	}, {
+		"x": {
+			"data": "2022-05-10 12:22:50"
+		},
+		"y": [{
+			"data": "10.0",
+			"name": "PID-6566"
+		}],
+		"title": "mem"
+	}, {
+		"x": {
+			"data": "2022-05-10 12:22:50"
+		},
+		"y": [{
+			"data": "0",
+			"name": "PID-6566"
+		}],
+		"title": "cpu"
+	}, {
+		"x": {
+			"data": "2022-05-10 12:22:50"
+		},
+		"y": [{
+			"data": "4.5",
+			"name": "PID-6566"
+		}],
+		"title": "ram"
+	}, {
+		"x": {
+			"data": "2022-05-10 12:22:50"
+		},
+		"y": [{
+			"data": "2511",
+			"name": "PID-6566"
+		}],
+		"title": "gpu_memory_usage"
+	}],
+	"isLogFile": false
+}
+```
+
+## job已结束
+
+```json
+{
+	"showData": {
+		"id": 19182,
+		"createTime": "2022-05-10 12:20:51",
+		"updateTime": "2022-05-10 12:23:48",
+		"environment": {
+			"account": "test",
+			"accrue_time": "2022-05-10T12:20:52",
+			"admin_comment": null,
+			"alloc_node": "mu01",
+			"alloc_sid": 140284,
+			"array_job_id": null,
+			"array_task_id": null,
+			"array_task_str": null,
+			"array_max_tasks": null,
+			"assoc_id": 29,
+			"batch_flag": 1,
+			"batch_features": null,
+			"batch_host": "gpu01",
+			"billable_tres": 2.0,
+			"bitflags": 444596224,
+			"boards_per_node": 0,
+			"burst_buffer": null,
+			"burst_buffer_state": null,
+			"command": "/data/aizoo-slurm/project/aizoo-release/aizoo-back-slurm/server/test_script_dir/T11-2e5e28ffafc47fcb14ed10bc453d21859d51a747-2022-05-10.sh",
+			"comment": null,
+			"contiguous": false,
+			"core_spec": null,
+			"cores_per_socket": null,
+			"cpus_per_task": 1,
+			"cpus_per_tres": null,
+			"cpu_freq_gov": null,
+			"cpu_freq_max": null,
+			"cpu_freq_min": null,
+			"dependency": null,
+			"derived_ec": "0:0",
+			"eligible_time": 1652156452,
+			"end_time": 1652156624,
+			"exc_nodes": [],
+			"exit_code": "0:15",
+			"features": [],
+			"group_id": 1001,
+			"job_id": 290,
+			"job_state": "CANCELLED",
+			"last_sched_eval": "2022-05-10T12:20:53",
+			"licenses": {},
+			"max_cpus": 0,
+			"max_nodes": 0,
+			"mem_per_tres": null,
+			"name": "T11-2e5e28ffafc47fcb14ed10bc453d21859d51a747-2022-05-10",
+			"network": null,
+			"nodes": "gpu01",
+			"nice": 0,
+			"ntasks_per_core": null,
+			"ntasks_per_core_str": "UNLIMITED",
+			"ntasks_per_node": 0,
+			"ntasks_per_socket": null,
+			"ntasks_per_socket_str": "UNLIMITED",
+			"ntasks_per_board": 0,
+			"num_cpus": 2,
+			"num_nodes": 1,
+			"num_tasks": 0,
+			"partition": "debug",
+			"mem_per_cpu": false,
+			"min_memory_cpu": null,
+			"mem_per_node": true,
+			"min_memory_node": 2048,
+			"pn_min_memory": 2048,
+			"pn_min_cpus": 1,
+			"pn_min_tmp_disk": 0,
+			"power_flags": 0,
+			"priority": 4294901471,
+			"profile": 0,
+			"qos": "normal",
+			"reboot": 0,
+			"req_nodes": [],
+			"req_switch": 0,
+			"requeue": true,
+			"resize_time": 0,
+			"restart_cnt": 0,
+			"resv_name": null,
+			"run_time": 171,
+			"run_time_str": "00:02:51",
+			"sched_nodes": null,
+			"shared": "OK",
+			"show_flags": 18,
+			"sockets_per_board": 0,
+			"sockets_per_node": null,
+			"start_time": 1652156453,
+			"state_reason": "None",
+			"std_err": "/data/aizoo-slurm/project/aizoo-release/aizoo-back-interpreter/files/out/1e4ff627-2630-415e-91e8-718f33e589a8/runtime_log/T11-2e5e28ffafc47fcb14ed10bc453d21859d51a747-2022-05-10.%J.err",
+			"std_in": "/dev/null",
+			"std_out": "/data/aizoo-slurm/project/aizoo-release/aizoo-back-interpreter/files/out/1e4ff627-2630-415e-91e8-718f33e589a8/runtime_log/T11-2e5e28ffafc47fcb14ed10bc453d21859d51a747-2022-05-10.%J.out",
+			"submit_time": 1652156452,
+			"suspend_time": 0,
+			"system_comment": null,
+			"time_limit": "UNLIMITED",
+			"time_limit_str": "UNLIMITED",
+			"time_min": 0,
+			"threads_per_core": null,
+			"tres_alloc_str": "cpu=2,node=1,billing=2",
+			"tres_bind": null,
+			"tres_freq": null,
+			"tres_per_job": null,
+			"tres_per_node": "gpu:1",
+			"tres_per_socket": null,
+			"tres_per_task": null,
+			"tres_req_str": "cpu=1,mem=2G,node=1,billing=1",
+			"user_id": 1001,
+			"wait4switch": 0,
+			"wckey": null,
+			"work_dir": "/data/aizoo-slurm",
+			"cpus_allocated": {
+				"gpu01": 2
+			},
+			"cpus_alloc_layout": {
+				"gpu01": [2]
+			},
+			"type": "showJob"
+		},
+		"jobStatus": "CANCELLED",
+		"jobKey": "290-10.102.33.49",
+		"name": "T11",
+		"checkPoints": [],
+		"downloadStatus": null,
+		"description": ""
+	},
+	"stopData": {
+		"JobID": " 290",
+		"Cluster": " cluster",
+		"UserGroup": " aizoo-slurm/aizoo-slurm",
+		"State": " CANCELLED (exit code 0)",
+		"Nodes": " 1",
+		"Corespernode": " 2",
+		"CPUUtilized": " 00",
+		"CPUEfficiency": " 0.00% of 00",
+		"JobWallclocktime": " 00",
+		"MemoryUtilized": " 0.00 MB (estimated maximum)",
+		"MemoryEfficiency": " 0.00% of 2.00 GB (2.00 GB/node)"
+	},
+	"runData": [],
+	"isLogFile": false
+}
+```

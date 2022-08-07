@@ -1,0 +1,57 @@
+syntax = "proto3";
+package proto;
+option java_package = "aizoo.grpc";
+option java_outer_classname = "GraphServiceProto";
+option java_multiple_files = true;
+
+
+service graph {
+
+  rpc interpreter_experiment (interpreter_experiment_request) returns (interpreter_experiment_reply) {}
+  rpc interpreter_component(interpreter_component_request) returns (interpreter_component_reply) {}
+  rpc interpreter_service(interpreter_service_request) returns (interpreter_service_reply) {}
+  rpc interpreter_application(interpreter_application_request) returns (interpreter_application_reply) {}
+}
+
+message interpreter_experiment_request {
+  string graph = 1;
+  string job = 2;
+  string save_path = 3;
+  string code_file_path = 4;
+}
+
+message interpreter_experiment_reply {
+  string save_path = 1;
+  repeated string code_file_paths = 2;
+}
+
+message interpreter_component_request{
+  string graph = 1;
+  string path = 2;
+}
+
+message interpreter_component_reply{
+  string process = 1;
+}
+
+message interpreter_service_request{
+  string graph = 1;
+  string path = 2;
+}
+
+message interpreter_service_reply{
+  string path = 1;
+  string save_path = 2;
+}
+
+message interpreter_application_request{
+  string graph = 1;
+  string job = 2;
+  string path = 3;
+  string code_dir = 4;
+}
+
+message interpreter_application_reply{
+  string path = 1;
+  string save_path = 2;
+}
